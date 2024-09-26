@@ -1,0 +1,32 @@
+.note-container {
+  position: absolute;
+  width: 300px;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.note-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  all: unset;
+  margin: 5px;
+}
+
+.note-textarea {
+  width: 100%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-sizing: border-box;
+  resize: unset;
+  border: none;
+  outline: none;
+  overflow-y: hidden;
+}

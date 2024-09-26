@@ -1,0 +1,24 @@
+.home-container {
+  position: relative;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.home-icons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  left: 0;
+}
+
+.note {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  background-color: aqua;
+  border-radius: 5px;
+}

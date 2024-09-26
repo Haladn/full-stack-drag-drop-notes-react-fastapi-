@@ -1,0 +1,22 @@
+.color-icons {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red;
+    background-color: brown; */
+  border-radius: 50px;
+  row-gap: 5px;
+  padding: 2px;
+}
+
+.colors {
+  all: unset;
+  width: 37px;
+  height: 37px;
+  border-radius: 50px;
+  cursor: pointer;
+  /* border: 3.5px solid brown; */
+}
+
+.active {
+  outline: 3px solid yellow;
+}

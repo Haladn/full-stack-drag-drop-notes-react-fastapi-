@@ -1,0 +1,35 @@
+.add-icon button {
+  all: unset;
+  cursor: pointer;
+  height: 37px;
+  width: 37px;
+  border-radius: 50px;
+  border: 3.5px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* left: 5px; */
+  margin-bottom: 5px;
+}
+
+.add-icon button ::before,
+.add-icon button ::after {
+  content: "";
+  position: absolute;
+  background-color: yellow;
+}
+
+.add-icon button ::before {
+  width: 25px;
+  height: 3.5px;
+  left: calc((18px - 6px) / 2);
+  top: 17px;
+}
+
+.add-icon button ::after {
+  width: 3.5px;
+  height: 25px;
+  top: calc((18px - 6px) / 2);
+  left: 17px;
+}
