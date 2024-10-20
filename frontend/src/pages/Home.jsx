@@ -4,12 +4,13 @@ import Colors from "../components/Colors";
 import NoteCard from "../components/NoteCard";
 import { NoteContext } from "../context/NoteContext";
 import api from "../api";
+import { useNavigate } from "react-router-dom";
 
 import "../styles/Home.css";
 
 function Home() {
   const { notes, setNotes } = useContext(NoteContext);
-
+  const navigate = useNavigate();
   const getNotes = async () => {
     try {
       const res = await api.get("/user/notes");
@@ -19,11 +20,19 @@ function Home() {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.clear();
+    navigate("/login");
+  };
+
   useEffect(() => {
     getNotes();
   }, []);
   return (
     <div className="home-container">
+      <div className="logout">
+        <button onClick={handleLogout}>Logout</button>
+      </div>
       <div>
         {notes.map((note) => (
           <NoteCard note={note} key={note.id} />

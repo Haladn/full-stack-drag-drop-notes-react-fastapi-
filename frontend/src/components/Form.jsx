@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import api from "../api";
 import { ACCESS_TOKEN } from "../constants";
-import "./Form.css";
+import "../styles/Form.css";
 const Form = ({ route, method }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
